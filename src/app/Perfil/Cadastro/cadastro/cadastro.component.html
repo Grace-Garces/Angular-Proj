@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="cadastro.component.css">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <form class="reate">
+      <label for="Email">Email:</label>
+      <input type="text" id="email" name="Email" placeholder="digite seu email" required>
+      <label for="password">Crie uma Senha:</label>
+      <input type="password" id="password" name="password" placeholder="Digite sua senha"
+      required minlength="8" maxlength="20"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Deve conter pelo menos um número, uma letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres">
+      <label for="password">Confirme sua Senha:</label>
+      <input type="password" id="password" name="password" placeholder="Digite sua senha"
+      required minlength="8" maxlength="20"
+      pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+      title="Deve conter pelo menos um número, uma letra maiúscula e minúscula, e pelo menos 8 ou mais caracteres">
+
+      <button type="submit" value="Enviar">Create my account</button>
+    </form>
+  </section>
+</body>
+</html>
